@@ -109,8 +109,16 @@ h2 {
   text-decoration: underline;
 }
 
+.headerAbout{
+  padding: 160px 20px;
+}
+
+.headerAbout p{
+  font-size: 18px;
+}
+
 @media (max-width: 900px) {
-  .hero {
+  .hero, .headerAbout {
   padding: 80px 20px;
 }
   h1 {
