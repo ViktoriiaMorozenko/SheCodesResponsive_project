@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #6C63FF;
+  --primary-color: #6c63ff;
   --second-color: #272142;
   --heading-font-family: "Playfair Display", serif;
   --second-font-family: "Poppins", sans-serif;
@@ -9,19 +9,25 @@ body {
   margin-top: 100px;
 }
 
-h1,h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
-p{
+p {
   font-family: var(--second-font-family);
   font-weight: normal;
+  font-size: 16px;
 }
 
-.hero{
-  background-color: #F9F7FE;
+.hero {
+  background-color: #f9f7fe;
   text-align: center;
   padding: 160px 20px;
 }
@@ -29,9 +35,10 @@ p{
 h1 {
   font-size: 96px;
   margin-bottom: 15px;
+  line-height: 1.5;
 }
 
- .hero p {
+.hero p {
   color: var(--second-color);
   font-size: 36px;
   font-weight: bold;
@@ -49,15 +56,31 @@ h1 {
 .primary-link {
   background: var(--primary-color);
   color: white;
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 12px 50px;
 }
 
+h2 {
+  font-size: 64px;
+}
+
+.moreDetails-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 30px;
+}
+
 .descriptions {
   font-size: 18px;
   line-height: 1.5;
+  opacity: 70%;
+  line-height: 30px;
 }
 
 .homepage-link {
@@ -84,4 +107,20 @@ h1 {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .hero {
+  padding: 80px 20px;
+}
+  h1 {
+    font-size: 44px;
+  }
+  .projectDescription h2 {
+    font-size: 32px;
+  }
+  .projectDescription {
+    padding: 0;
+    text-align: center;
+  }
 }
