@@ -23,7 +23,6 @@ h6 {
 .hero {
   background-color: #f9f7fe;
   text-align: center;
-  padding: 160px 80px;
 }
 
 .hero p {
@@ -41,12 +40,8 @@ h6 {
   font-size: 24px;
 }
 
-.headerAbout, .headerWork{
+.receptacle{
   padding: 160px 80px;
-}
-
-.headerAbout p{
-  font-size: 18px;
 }
 
 h1 {
@@ -135,7 +130,7 @@ p {
 }
 
 @media (max-width: 900px) {
-  .hero, .headerAbout, .headerWork {
+  .hero, .receptacle {
   padding: 80px 20px;
 }
   h1 {
@@ -148,7 +143,7 @@ p {
     padding: 0;
     text-align: center;
   }
-  .headerWork h2{
+  h2.headerWork{
     font-size: 32px;
   }
 }
