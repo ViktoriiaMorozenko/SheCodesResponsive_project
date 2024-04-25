@@ -23,7 +23,7 @@ h6 {
 p {
   font-family: var(--second-font-family);
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .hero {
@@ -65,6 +65,13 @@ h1 {
 
 h2 {
   font-size: 64px;
+}
+
+h3{
+  font-family: var(--second-font-family);
+  font-weight: bold;
+  line-height: 2;
+  font-size: 24px
 }
 
 .moreDetails-link {
@@ -109,7 +116,7 @@ h2 {
   text-decoration: underline;
 }
 
-.headerAbout{
+.headerAbout, .headerWork{
   padding: 160px 20px;
 }
 
@@ -118,7 +125,7 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .hero, .headerAbout {
+  .hero, .headerAbout, .headerWork {
   padding: 80px 20px;
 }
   h1 {
@@ -130,5 +137,8 @@ h2 {
   .projectDescription {
     padding: 0;
     text-align: center;
+  }
+  .headerWork h2{
+    font-size: 32px;
   }
 }
