@@ -118,6 +118,21 @@ p {
   margin: 10px;
 }
 
+.contactBox {
+  background-color: #f9f7fe;
+  padding: 45px 20px;
+  margin: 0 35px;
+  border-radius: 6px;
+}
+
+.contactDescription {
+  padding-left: 104px;
+}
+
+.contactLink {
+  text-align: center;
+}
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -131,8 +146,16 @@ p {
   color: var(--primary-color);
 }
 
-.social_links {
+.social_links a {
   text-align: center;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 40px 25px;
+  transition: all 100ms ease-in-out;
+}
+
+.social_links a:hover {
+  color: var(--second-color);
 }
 
 @media (max-width: 900px) {
@@ -143,6 +166,17 @@ p {
   h1 {
     font-size: 44px;
   }
+  h2.headerWork {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .descriptions {
+    font-size: 10px;
+    line-height: 2;
+  }
+  .getInTouch,
   .projectDescription h2 {
     font-size: 32px;
   }
@@ -150,7 +184,19 @@ p {
     padding: 0;
     text-align: center;
   }
-  h2.headerWork {
-    font-size: 32px;
+  footer .contactBox {
+    padding: 25px 20px;
+    margin: 0 25px;
+  }
+  footer .contactDescription {
+    padding-left: 5px;
+  }
+  footer .primary-link {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 12px 20px;
+  }
+  .email-link {
+    font-size: 18px;
   }
 }
