@@ -23,6 +23,7 @@ h6 {
 .hero {
   background-color: #f9f7fe;
   text-align: center;
+  padding: 40px 10px;
 }
 
 .hero p {
@@ -41,7 +42,7 @@ h6 {
 }
 
 .receptacle {
-  padding: 160px 80px;
+  padding: 60px 80px 160px;
 }
 
 h1 {
@@ -82,12 +83,19 @@ p {
 .primary-link {
   background: var(--primary-color);
   color: white;
-  border: 1px solid var(--primary-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 12px 50px;
+  transition: all 100ms ease-in-out;
 }
+
+.primary-link:hover{
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
 .moreDetails-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -95,6 +103,11 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 12px 30px;
+}
+
+.moreDetails-link:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .descriptions {
@@ -140,6 +153,7 @@ p {
   font-size: 24px;
   text-decoration: none;
   font-family: var(--second-font-family);
+  padding-top: 48px;
 }
 
 .email-link:hover {
@@ -158,10 +172,27 @@ p {
   color: var(--second-color);
 }
 
+.codedBy {
+  font-family: var(--second-font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 80%;
+}
+
+.codedBy a{
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+.codedBy a:hover{
+  color: var(--second-color);
+}
+
 @media (max-width: 900px) {
   .hero,
   .receptacle {
-    padding: 80px 20px;
+    padding: 20px 40px 60px;
   }
   h1 {
     font-size: 44px;
@@ -198,5 +229,10 @@ p {
   }
   .email-link {
     font-size: 18px;
+    padding-top: 0;
+  }
+  .codedBy{
+    font-size: 12px;
+    margin: 10px 15px;
   }
 }
