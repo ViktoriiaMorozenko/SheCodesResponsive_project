@@ -40,7 +40,7 @@ h6 {
   font-size: 24px;
 }
 
-.receptacle{
+.receptacle {
   padding: 160px 80px;
 }
 
@@ -58,7 +58,7 @@ h3 {
   font-family: var(--second-font-family);
   font-weight: bold;
   line-height: 2;
-  font-size: 24px
+  font-size: 24px;
 }
 
 p {
@@ -67,14 +67,15 @@ p {
   font-size: 18px;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
   color: var(--second-color);
   font-family: var(--second-font-family);
   font-size: 16px;
   transition: all 100ms ease-in-out;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
 
@@ -120,19 +121,25 @@ p {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
+  color: black;
+  font-size: 24px;
   text-decoration: none;
+  font-family: var(--second-font-family);
 }
 
 .email-link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.social_links {
+  text-align: center;
 }
 
 @media (max-width: 900px) {
-  .hero, .receptacle {
-  padding: 80px 20px;
-}
+  .hero,
+  .receptacle {
+    padding: 80px 20px;
+  }
   h1 {
     font-size: 44px;
   }
@@ -143,7 +150,7 @@ p {
     padding: 0;
     text-align: center;
   }
-  h2.headerWork{
+  h2.headerWork {
     font-size: 32px;
   }
 }
